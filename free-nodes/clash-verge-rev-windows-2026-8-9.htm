@@ -280,9 +280,19 @@ A4：确保下载来源官方可信，必要时临时关闭安全软件，安装
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>SSR 的 UDP 转发功能如何启用？</h5></div>
+    <div class="panel-heading"><h5>如何在 Windows 上安装 Clash for Windows？</h5></div>
     <div class="panel-body">
-        SSR 支持 UDP 转发，可通过客户端设置开启。启用后，游戏和语音等 UDP 流量可通过节点代理，降低丢包率和延迟，提高实时网络应用体验。<hr />    </div>
+        在 Windows 上安装 Clash for Windows 十分简单。只需前往官方 GitHub 页面下载最新版安装包，运行安装程序后导入订阅链接或配置文件即可。安装完成后，用户可以通过图形化界面方便地切换节点、编辑规则和控制代理模式。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Hysteria2 支持多用户配置吗？</h5></div>
+    <div class="panel-body">
+        Hysteria2 支持多用户配置，管理员可以在服务器端为不同用户分配独立凭证。这样既能保障隐私，也便于流量统计和限速控制，适合团队或小型共享环境。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Nekobox 可以与 Shadowsocks 等客户端同时使用吗？</h5></div>
+    <div class="panel-body">
+        可以。Nekobox 配置独立，与 Shadowsocks、Clash 等客户端互不干扰。用户可根据需要通过策略组选择节点，实现灵活的网络管理和分流策略。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>VLESS 的 XTLS 模式能提升传输效率吗？</h5></div>
@@ -290,14 +300,14 @@ A4：确保下载来源官方可信，必要时临时关闭安全软件，安装
         XTLS 模式通过减少冗余加密和握手次数，降低延迟，提高吞吐量。在高并发和短连接场景下，效率明显优于普通 TLS，同时保持数据安全性和隐蔽性。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>VMess 节点的 alterId 参数还需要设置吗？</h5></div>
+    <div class="panel-heading"><h5>QuantumultX 如何通过策略组优化多应用分流？</h5></div>
     <div class="panel-body">
-        在新版 V2Ray/Xray 内核中，alterId 已被废弃，不再影响认证逻辑。建议用户设置为 0 或删除该字段，以避免连接异常或不兼容情况。<hr />    </div>
+        QuantumultX 可以根据应用类型、端口和协议设置策略组，自动选择最优节点处理不同流量。这样可保证网页浏览、视频播放和游戏访问顺畅，提高整体网络效率。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>如何在 Windows 上安装 Clash for Windows？</h5></div>
+    <div class="panel-heading"><h5>Matsuri 如何结合 Xray 内核实现多协议支持？</h5></div>
     <div class="panel-body">
-        在 Windows 上安装 Clash for Windows 十分简单。只需前往官方 GitHub 页面下载最新版安装包，运行安装程序后导入订阅链接或配置文件即可。安装完成后，用户可以通过图形化界面方便地切换节点、编辑规则和控制代理模式。<hr />    </div>
+        Matsuri 可加载 Xray 核心，通过配置多 inbound/outbound 模块实现 VMess、VLess、Trojan 等协议共存。用户可在单一服务端配置文件中同时支持多客户端访问，便于统一管理。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Mihomo 的节点管理支持批量操作吗？</h5></div>
@@ -310,24 +320,14 @@ A4：确保下载来源官方可信，必要时临时关闭安全软件，安装
         AEAD 加密可防止数据篡改、重放攻击和流量特征泄露。在高封锁环境下保证节点可用，提升数据安全和连接稳定性，同时降低被检测风险，确保长期安全访问。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Hysteria2 支持多用户配置吗？</h5></div>
+    <div class="panel-heading"><h5>VMess 节点的 alterId 参数还需要设置吗？</h5></div>
     <div class="panel-body">
-        Hysteria2 支持多用户配置，管理员可以在服务器端为不同用户分配独立凭证。这样既能保障隐私，也便于流量统计和限速控制，适合团队或小型共享环境。<hr />    </div>
+        在新版 V2Ray/Xray 内核中，alterId 已被废弃，不再影响认证逻辑。建议用户设置为 0 或删除该字段，以避免连接异常或不兼容情况。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Matsuri 如何结合 Xray 内核实现多协议支持？</h5></div>
+    <div class="panel-heading"><h5>SSR 的 UDP 转发功能如何启用？</h5></div>
     <div class="panel-body">
-        Matsuri 可加载 Xray 核心，通过配置多 inbound/outbound 模块实现 VMess、VLess、Trojan 等协议共存。用户可在单一服务端配置文件中同时支持多客户端访问，便于统一管理。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Nekobox 可以与 Shadowsocks 等客户端同时使用吗？</h5></div>
-    <div class="panel-body">
-        可以。Nekobox 配置独立，与 Shadowsocks、Clash 等客户端互不干扰。用户可根据需要通过策略组选择节点，实现灵活的网络管理和分流策略。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>QuantumultX 如何通过策略组优化多应用分流？</h5></div>
-    <div class="panel-body">
-        QuantumultX 可以根据应用类型、端口和协议设置策略组，自动选择最优节点处理不同流量。这样可保证网页浏览、视频播放和游戏访问顺畅，提高整体网络效率。    </div>
+        SSR 支持 UDP 转发，可通过客户端设置开启。启用后，游戏和语音等 UDP 流量可通过节点代理，降低丢包率和延迟，提高实时网络应用体验。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -375,16 +375,16 @@ A4：确保下载来源官方可信，必要时临时关闭安全软件，安装
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/clash-verge-rev-node-2026-8-11.htm" title="Clash机场 | 8月11日21.6M/S|免费Trojan节点/Shadowrocket节点/Clash节点/Singbox节点/V2ray节点/SSR节点机场推荐，在线Clash机场梯子购买推荐">Clash机场 | 8月11日21.6M/S|免费Trojan节点/Shadowrocket节点/Clash节点/Singbox节点/V2ray节点/SSR节点机场推荐，在线Clash机场梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/node-share-2026-8-5.htm" title="Clash机场 | 8月5日19.4M/S|免费SSR节点/Clash节点/Shadowrocket节点/V2ray节点/Singbox节点/Trojan节点机场推荐，在线Clash机场梯子购买推荐">Clash机场 | 8月5日19.4M/S|免费SSR节点/Clash节点/Shadowrocket节点/V2ray节点/Singbox节点/Trojan节点机场推荐，在线Clash机场梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/node-share-2026-8-7.htm" title="Clash机场 | 8月7日18.6M/S|免费Shadowrocket节点/Clash节点/Trojan节点/V2ray节点/SSR节点/Singbox节点机场推荐，在线Clash机场梯子购买推荐">Clash机场 | 8月7日18.6M/S|免费Shadowrocket节点/Clash节点/Trojan节点/V2ray节点/SSR节点/Singbox节点机场推荐，在线Clash机场梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/clash-verge-rev-windows-2026-8-9.htm" title="Clash机场 | 8月9日19.7M/S|免费Trojan节点/V2ray节点/Singbox节点/Shadowrocket节点/Clash节点/SSR节点机场推荐，在线Clash机场梯子购买推荐">Clash机场 | 8月9日19.7M/S|免费Trojan节点/V2ray节点/Singbox节点/Shadowrocket节点/Clash节点/SSR节点机场推荐，在线Clash机场梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-8-2-clash-meta-github.htm" title="Clash机场 | 8月2日18.9M/S|免费Shadowrocket节点/Trojan节点/V2ray节点/Singbox节点/Clash节点/SSR节点机场推荐，在线Clash机场梯子购买推荐">Clash机场 | 8月2日18.9M/S|免费Shadowrocket节点/Trojan节点/V2ray节点/Singbox节点/Clash节点/SSR节点机场推荐，在线Clash机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/clash-verge-rev-github-2026-8-25.htm" title="Clash机场 | 8月25日22.1M/S|免费V2ray节点/Shadowrocket节点/SSR节点/Singbox节点/Trojan节点/Clash节点机场推荐，在线Clash机场梯子购买推荐">Clash机场 | 8月25日22.1M/S|免费V2ray节点/Shadowrocket节点/SSR节点/Singbox节点/Trojan节点/Clash节点机场推荐，在线Clash机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-9-2-clash-meta-github.htm" title="Clash机场 | 9月2日19.1M/S|免费SSR节点/V2ray节点/Trojan节点/Clash节点/Singbox节点/Shadowrocket节点机场推荐，在线Clash机场梯子购买推荐">Clash机场 | 9月2日19.1M/S|免费SSR节点/V2ray节点/Trojan节点/Clash节点/Singbox节点/Shadowrocket节点机场推荐，在线Clash机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-8-28-clash-verge-rev-node-share.htm" title="Clash机场 | 8月28日20.5M/S|免费Trojan节点/Singbox节点/Clash节点/Shadowrocket节点/V2ray节点/SSR节点机场推荐，在线Clash机场梯子购买推荐">Clash机场 | 8月28日20.5M/S|免费Trojan节点/Singbox节点/Clash节点/Shadowrocket节点/V2ray节点/SSR节点机场推荐，在线Clash机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-8-14-clash-stash-node.htm" title="Clash机场 | 8月14日20.3M/S|免费Clash节点/Shadowrocket节点/V2ray节点/Singbox节点/Trojan节点/SSR节点机场推荐，在线Clash机场梯子购买推荐">Clash机场 | 8月14日20.3M/S|免费Clash节点/Shadowrocket节点/V2ray节点/Singbox节点/Trojan节点/SSR节点机场推荐，在线Clash机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-8-16-free-node-subscribe.htm" title="Clash机场 | 8月16日22.8M/S|免费Trojan节点/Clash节点/SSR节点/Singbox节点/Shadowrocket节点/V2ray节点机场推荐，在线Clash机场梯子购买推荐">Clash机场 | 8月16日22.8M/S|免费Trojan节点/Clash节点/SSR节点/Singbox节点/Shadowrocket节点/V2ray节点机场推荐，在线Clash机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-8-22-free-node-subscribe.htm" title="Clash机场 | 8月22日21.1M/S|免费V2ray节点/Trojan节点/SSR节点/Singbox节点/Clash节点/Shadowrocket节点机场推荐，在线Clash机场梯子购买推荐">Clash机场 | 8月22日21.1M/S|免费V2ray节点/Trojan节点/SSR节点/Singbox节点/Clash节点/Shadowrocket节点机场推荐，在线Clash机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/node-share-2026-8-13.htm" title="Clash机场 | 8月13日18.2M/S|免费SSR节点/V2ray节点/Clash节点/Shadowrocket节点/Singbox节点/Trojan节点机场推荐，在线Clash机场梯子购买推荐">Clash机场 | 8月13日18.2M/S|免费SSR节点/V2ray节点/Clash节点/Shadowrocket节点/Singbox节点/Trojan节点机场推荐，在线Clash机场梯子购买推荐</a><hr /></li>
                         <li class="py-2"><a href="/free-nodes/clash-v2ray-ss-ssr-2026-8-17.htm" title="Clash机场 | 8月17日19.2M/S|免费Trojan节点/Shadowrocket节点/V2ray节点/Singbox节点/SSR节点/Clash节点机场推荐，在线Clash机场梯子购买推荐">Clash机场 | 8月17日19.2M/S|免费Trojan节点/Shadowrocket节点/V2ray节点/Singbox节点/SSR节点/Clash节点机场推荐，在线Clash机场梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-7-23-clash-verge-rev-node.htm" title="Clash机场 | 7月23日20.4M/S|免费V2ray节点/Clash节点/SSR节点/Singbox节点/Shadowrocket节点/Trojan节点机场推荐，在线Clash机场梯子购买推荐">Clash机场 | 7月23日20.4M/S|免费V2ray节点/Clash节点/SSR节点/Singbox节点/Shadowrocket节点/Trojan节点机场推荐，在线Clash机场梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-8-6-clash-stash-node.htm" title="Clash机场 | 8月6日20.7M/S|免费Trojan节点/Clash节点/Singbox节点/Shadowrocket节点/SSR节点/V2ray节点机场推荐，在线Clash机场梯子购买推荐">Clash机场 | 8月6日20.7M/S|免费Trojan节点/Clash节点/Singbox节点/Shadowrocket节点/SSR节点/V2ray节点机场推荐，在线Clash机场梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/clash-verge-rev-github-2026-7-29.htm" title="Clash机场 | 7月29日21.4M/S|免费Singbox节点/Trojan节点/SSR节点/Shadowrocket节点/V2ray节点/Clash节点机场推荐，在线Clash机场梯子购买推荐">Clash机场 | 7月29日21.4M/S|免费Singbox节点/Trojan节点/SSR节点/Shadowrocket节点/V2ray节点/Clash节点机场推荐，在线Clash机场梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-7-21-clash-verge-rev-windows.htm" title="Clash机场 | 7月21日22.5M/S|免费Clash节点/Shadowrocket节点/V2ray节点/Trojan节点/SSR节点/Singbox节点机场推荐，在线Clash机场梯子购买推荐">Clash机场 | 7月21日22.5M/S|免费Clash节点/Shadowrocket节点/V2ray节点/Trojan节点/SSR节点/Singbox节点机场推荐，在线Clash机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/clash-verge-rev-github-2026-8-27.htm" title="Clash机场 | 8月27日20.9M/S|免费Singbox节点/Trojan节点/SSR节点/V2ray节点/Clash节点/Shadowrocket节点机场推荐，在线Clash机场梯子购买推荐">Clash机场 | 8月27日20.9M/S|免费Singbox节点/Trojan节点/SSR节点/V2ray节点/Clash节点/Shadowrocket节点机场推荐，在线Clash机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/clash-verge-rev-node-2026-8-11.htm" title="Clash机场 | 8月11日21.6M/S|免费Trojan节点/Shadowrocket节点/Clash节点/Singbox节点/V2ray节点/SSR节点机场推荐，在线Clash机场梯子购买推荐">Clash机场 | 8月11日21.6M/S|免费Trojan节点/Shadowrocket节点/Clash节点/Singbox节点/V2ray节点/SSR节点机场推荐，在线Clash机场梯子购买推荐</a><hr /></li>
                     </ul>
     </div>
 </div>
@@ -396,10 +396,10 @@ A4：确保下载来源官方可信，必要时临时关闭安全软件，安装
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">18</span> <a href="/date/2026-08/" title="2026-08 归档">2026-08</a></h4>
+                <h4><span class="badge" style="float: right;">4</span> <a href="/date/2026-09/" title="2026-09 归档">2026-09</a></h4>
             </li>
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">13</span> <a href="/date/2026-07/" title="2026-07 归档">2026-07</a></h4>
+                <h4><span class="badge" style="float: right;">26</span> <a href="/date/2026-08/" title="2026-08 归档">2026-08</a></h4>
             </li>
                     </ul>
     </div>
